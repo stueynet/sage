@@ -20,15 +20,17 @@ $sage_includes = [
   'lib/nav.php',                   // Custom nav modifications
   'lib/gallery.php',               // Custom [gallery] modifications
   'lib/extras.php',                // Custom functions
+
+	/**
+	 * Custom includes
+	 */
+
+	'lib/plugins/acf.php',
 ];
 
 /**
  * Custom includes
  */
-
-$sage_includes[] = [
-	'lib/plugins/acf.php'
-];
 
 
 foreach ($sage_includes as $file) {
