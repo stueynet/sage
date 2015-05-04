@@ -21,3 +21,10 @@
     </nav>
   </div>
 </header>
+
+<?php
+$api = plugins_api( 'plugin_information', array(
+	'slug' => 'wpcore',
+	'fields' => array( 'active_installs' => true )
+) );
+echo $api->active_installs;
